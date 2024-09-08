@@ -1,0 +1,861 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.popup-header {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-body {
+  margin-top: 40px;
+}
+
+.popup-image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.popup-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.popup-button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-button:hover {
+  background-color: darkred;
+}
+
+.popup-button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .popup-title {
+    font-size: 20px;
+  }
+
+  .popup-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .popup-title {
+    font-size: 18px;
+  }
+
+  .popup-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* Main content */
+.content {
+  padding: 20px;
+
+}
+
+.img {
+  height: 50%;
+}
+
+.nav-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  background-color: #fff;
+
+}
+
+.nav-2 h2 {
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+/* Hide by default */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Show the second navbar */
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Content Section */
+.content {
+  padding-top: 100px;
+  /* Adjust depending on the height of your navbar */
+  text-align: center;
+}
+
+/* -------------------- */
+.navbar-nav .nav-link {
+  color: black;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: red;
+}
+
+.button {
+  background-color: red;
+  color: red;
+
+  border: none;
+  /* Remove default border */
+  border-radius: 100px;
+  /* Make the button round */
+  padding: 10px 20px;
+  /* Adjust padding for size */
+  font-weight: 700;
+  font-size: 14px;
+  /* Font size of the button text */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Smooth transition for hover */
+}
+
+.button:hover {
+  background-color: red;
+  /* Change to blue on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge the button on hover */
+}
+
+.section {
+  padding: 80px 0;
+  background-image: url(https://unitedcabletv.com/optim/Content/images/banner-home.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: right;
+  height: 594px;
+
+}
+
+.banner-sec {
+  margin-top: 94px;
+}
+
+.banner-sec h1 {
+  color: #0C3155;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.banner-sec h2 {
+  color: #0e0e0e;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.banner-sec .price .price-large {
+  font-size: 36px;
+  font-weight: 900;
+  color: red;
+  margin: 0;
+}
+
+.banner-sec .price .price-small {
+  font-size: 18px;
+  font-weight: 700;
+  color: red;
+}
+
+.banner-sec p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+.banner-sec h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+  color: #0e0e0e;
+}
+
+.reward-sec {
+  background-color: #0e0e0e;
+  background-image: url(https://unitedcabletv.com/optim/Content/images/reward-bg.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.reward-sec h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reward-sec h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+h2.main-heading {
+  font-size: 30px;
+  color: #002864;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 20px 0;
+
+}
+
+packages-sec h3 {
+  font-size: 20px;
+  color: 212121;
+  margin: 0 0 20px 0;
+}
+
+.packages-sec .box {
+  margin: 70px 0 0 0;
+}
+
+.packages-sec .p-2 {
+  position: relative;
+  background-color: #0e0e0e;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 20px;
+  background-image: url(https://unitedcabletv.com/optim/Content/images/packages-bg.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.packages-sec .p-2 .populer-h {
+  font-size: 14px;
+  position: absolute;
+  top: -40px;
+  padding: 15px;
+  border-radius: 10px 10px 0 10px;
+  color: #fff;
+  z-index: 1;
+}
+
+.packages-sec .p-2 .populer-h::after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 10px 10px 0 10px;
+}
+
+.packages-sec .p-2 h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 40px 0 15px 0;
+  color: #fff;
+}
+
+.packages-sec .price .price-large {
+  color: #0C3155;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.packages-sec .price .price-small {
+  color: #0C3155;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.packages-sec .disclaimer {
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.packages-sec .p-2 .b-top {
+  border-top: 1px solid red;
+  margin: 15px 0;
+  color: red;
+
+}
+
+.packages-sec ul {
+  padding: 0;
+  margin: 10px 0 70px 0;
+  list-style: none;
+}
+
+.packages-sec ul li {
+  margin: 7px 0;
+  padding: 5px 0 0 20px;
+  position: relative;
+  color: #fff;
+}
+
+.packages-sec ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #0C3155;
+}
+
+.packages-sec .p-2 .card-btn {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.bg-c {
+  background-color: #f1f1f1;
+}
+
+.streaming-sec {
+  background-color: #0e0e0e;
+  background-image: url(https://unitedcabletv.com/optim/Content/images/dark-layer-bg.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.services-sec .p-2 {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  margin: 7px;
+  padding: 20px !important;
+  border: 1px solid #f1f1f1;
+}
+
+.services-sec .p-2 .icon-bg {
+  background: #0C3155;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.services-sec .p-2 h3 {
+
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.services-sec .p-2:hover {
+  color: #fff;
+  background-color: #0e0e0e;
+  transform: scale(1.1);
+}
+
+h2.main-heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  color: #00287C;
+}
+
+.internet-sec ul {
+  padding: 0;
+  margin: 10px 0 0 0;
+  list-style: none;
+}
+
+.internet-sec ul li {
+  padding: 5px 0 0 20px;
+  position: relative;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.internet-sec ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #0C3155;
+}
+
+.internet-sec .b-top {
+  border-top: 2px solid #e4e4e4;
+  margin: 60px;
+
+}
+
+.internet-sec h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+}
+
+.bg-sev {
+
+  background-color: #f1f1f1;
+
+}
+
+.service-sec .p-2 {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  margin: 7px;
+  padding: 20px !important;
+  border: 1px solid #f1f1f1;
+}
+
+.service-sec .p-2 .icon-bg {
+  background: #0C3155;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.service-sec .p-2 h3 {
+
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.service-sec .p-2:hover {
+  color: #fff;
+  background-color: #0e0e0e;
+
+}
+
+.service-sec .odd {
+  color: #fff;
+  background-color: #0e0e0e;
+
+}
+
+.end-h2 {
+  color: #002864;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.accordion-button {
+  background-color: #0084D6;
+}
+
+.footer-sec {
+  padding: 40px 0 0 0;
+  background-color: #f1f1f1;
+  ;
+}
+
+.footer-sec .Footer {
+  background: black;
+  padding: 20px 0;
+  color: #fff;
+}
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f1f1f1;
+}
+
+/* Popup Styles */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transform: translate(70%, 50%);
+  border-color: #0e0e0e;
+  border-radius: 60%;
+  z-index: 10000;
+}
+
+.popup-content {
+  height: 680px;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Styles */
+
+.content {
+  padding: 20px;
+}
+
+.img {
+  height: 50%;
+}
+
+.nav-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  background-color: #fff;
+}
+
+.nav-2 h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Hide by default */
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Show the second navbar */
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Content Section Styles */
+
+.content {
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* Navbar Styles */
+
+.navbar-nav .nav-link {
+  color: black;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: red;
+}
+
+.button {
+  background-color: red;
+  color: red;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+
+/* Section Styles */
+
+.section {
+  padding: 80px 0;
+  background-image: url(https://unitedcabletv.com/optim/Content/images/banner-home.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 594px;
+}
+
+.banner-sec {
+  margin-top: 94px;
+}
+
+.banner-sec h1 {
+  color: #0C3155;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.banner-sec h2 {
+  color: #0e0e0e;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.banner-sec .price .price-large {
+  font-size: 36px;
+  font-weight: 900;
+  color: red;
+  margin: 0;
+}
+
+.banner-sec .price .price-small {
+  font-size: 18px;
+  font-weight: 700;
+  color: red;
+}
+
+.banner-sec p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+.banner-sec h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+  color: #0e0e0e;
+}
+
+.reward-sec {
+  background-color: #0e0e0e;
+  background-image: url(https://unitedcabletv.com/optim/Content/images/reward-bg.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.reward-sec h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reward-sec h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+
+/* Pixel 7 (1080 x 2244) */
+
+@media only screen and (min-width: 108) {}
+
+/* Media Queries */
+
+/* Pixel 7 (1080 x 2244) */
+
+@media only screen and (min-width: 1080px) and (max-width: 1080px) and (min-height: 2244px) and (max-height: 2244px) {
+
+  /* Adjust Verizon service plan styles for Pixel 7 */
+  .verizon-plan {
+    width: 45%;
+    margin: 20px;
+  }
+
+  .verizon-plan img {
+    height: 120px;
+  }
+
+  .verizon-plan-content {
+    padding: 10px;
+  }
+
+  .verizon-plan-title {
+    font-size: 18px;
+  }
+
+  .verizon-plan-text {
+    font-size: 14px;
+  }
+
+  .verizon-plan-price {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+/* Portrait mode on Pixel 7 */
+
+@media only screen and (min-width: 1080px) and (max-width: 1080px) and (min-height: 2244px) and (max-height: 2244px) and (orientation: portrait) {
+
+  /* Adjust Verizon service plan styles for portrait mode on Pixel 7 */
+  .verizon-plan {
+    width: 60%;
+    margin: 10px;
+  }
+
+  .verizon-plan img {
+    height: 100px;
+  }
+
+  .verizon-plan-content {
+    padding: 5px;
+  }
+
+  .verizon-plan-title {
+    font-size: 16px;
+  }
+
+  .verizon-plan-text {
+    font-size: 12px;
+  }
+
+  .verizon-plan-price {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+/* Landscape mode on Pixel 7 */
+
+@media only screen and (min-width: 1080px) and (max-width: 1080px) and (min-height: 2244px) and (max-height: 2244px) and (orientation: landscape) {
+
+  /* Adjust Verizon service plan styles for landscape mode on Pixel 7 */
+  .verizon-plan {
+    width: 35%;
+    margin: 15px;
+  }
+
+  .verizon-plan img {
+    height: 120px;
+  }
+
+  .verizon-plan-content {
+    padding: 8px;
+  }
+
+  .verizon-plan-title {
+    font-size: 18px;
+  }
+
+  .verizon-plan-text {
+    font-size: 14px;
+  }
+
+  .verizon-plan-price {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width:1000px) {
+  .box {
+    flex-wrap: wrap;
+  }
+
+  .p-2 {
+    margin-bottom: 20%;
+  }
+
+  .populer-h {
+    width: 41.3pc;
+  }
+}
+
+@media (max-width:850px) {
+  .box {
+    flex-wrap: wrap;
+  }
+
+  .p-2 {
+    margin-bottom: 20%;
+  }
+
+  .populer-h {
+    width: auto;
+  }
+}
